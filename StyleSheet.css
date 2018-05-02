@@ -1,0 +1,515 @@
+﻿body {
+    background-color: #3e3e3e;
+    height: 1000px;
+}
+
+a {
+    text-decoration: none;
+    color: #3e3e3e;
+}
+
+.back {
+    color: #ff6c6c !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: right;
+    position: absolute;
+    font-size: 18px;
+}
+
+.back:hover {
+    color: #f3f3f3 !important;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 25% 10% 65%;
+    grid-template-columns: 100%;
+    grid-template-areas: "head"
+                         "subhead"
+                         "options";
+    margin: auto;
+}
+
+.head {
+    grid-area: head;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    color: red;
+    -webkit-animation: rainbow 6s infinite;
+}
+
+@-webkit-keyframes rainbow {
+    14% {
+        color: red;
+    }
+
+    28% {
+        color: orange;
+    }
+
+    43% {
+        color: yellow;
+    }
+
+    57% {
+        color: green;
+    }
+
+    71% {
+        color: blue;
+    }
+
+    86% {
+        color: purple;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+.subhead {
+    grid-area: subhead;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 22px;
+    color: #f3f3f3;
+    padding-bottom: 3%;
+}
+
+.options {
+    grid-area: options;
+    color: #3e3e3e;
+    display: grid;
+    width: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 100%;
+    grid-template-areas: "basicInfoPic"
+                         "typesPic"
+                         "exchangePic"
+                         "historyPic"
+                         "funFactsPic";
+    margin: auto;
+}
+
+.basicInfo {    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 23px;
+    text-align: center;
+    width: 33%;
+    height: 15%;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    transition: transform .5s;
+    position: absolute;
+    margin-left: 33%;
+    margin-top: 25%;
+    z-index: 1;
+}
+
+.basicInfo:hover {
+    transform: scale(1.5);
+}
+
+.types {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 23px;
+    text-align: center;
+    width: 33%;
+    height: 15%;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    transition: transform .5s;
+    position: absolute;
+    margin-left: 33%;
+    margin-top: 62%;
+    z-index: 1;
+}
+
+.types:hover {
+    transform: scale(1.5);
+}
+
+.exchangeAndIndex {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 23px;
+    text-align: center;
+    width: 40%;
+    height: 15%;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    transition: transform .5s;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 100%;
+    z-index: 1;
+}
+
+.exchangeAndIndex:hover {
+    transform: scale(1.5);
+}
+
+.history {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 23px;
+    text-align: center;
+    width: 40%;
+    height: 15%;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    transition: transform .5s;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 138%;
+    z-index: 1;
+}
+
+.history:hover {
+    transform: scale(1.5);
+}
+
+.funFacts {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 23px;
+    text-align: center;
+    width: 33%;
+    height: 15%;
+    background-color: #f3f3f3;
+    border-radius: 30px;
+    transition: transform .5s;
+    position: absolute;
+    margin-left: 33%;
+    margin-top: 178%;
+    z-index: 1;
+}
+
+.funFacts:hover {
+    transform: scale(1.5);
+}
+
+.italicize {
+    font-style: italic;
+    text-align: center;
+    font-size: 30px;
+}
+
+.basicInfoPic {
+    grid-area: basicInfoPic;
+    margin: auto;
+    width: 100%;
+    filter: blur(5px);
+}
+
+.typesPic {
+    grid-area: typesPic;
+    margin: auto;
+    width: 100%;
+    filter: blur(5px);
+}
+
+.exchangePic {
+    grid-area: exchangePic;
+    margin: auto;
+    width: 100%;
+    filter: blur(5px);
+}
+
+.historyPic {
+    grid-area: historyPic;
+    margin: auto;
+    width: 100%;
+    filter: blur(5px);
+}
+
+.funFactsPic {
+    grid-area: funFactsPic;
+    margin: auto;
+    width: 100%;
+    filter: blur(5px);
+}
+
+.alignMiddle {
+    line-height: 50px;
+}
+
+.basicshead {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: #f3f3f3;
+}
+
+.basicsexplanation {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+    color: #f3f3f3;
+}
+
+.formulaslist {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 100%;
+    grid-template-areas: "FVFhead" "FVFform" "FVFunit" "ROShead" "ROSform" "ROSunit" "ROOhead" "ROOform" "ROOunit";
+    grid-gap: 20px;
+}
+
+.formula {
+    font-family: Arial;
+    color: #f3f3f3;
+    font-size: 25px;
+}
+
+.units {
+    color: #f3f3f3;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.prtgraph {
+    display: inline;
+    float: right;
+    padding-left: 3%;
+    padding-right: 1%;
+}
+
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: #f3f3f3;
+}
+
+.typeadv {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+    color: #85ff8f;
+}
+
+.typedisadv {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+    color: #ffa6a6;
+}
+
+.typedesc {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+    color: #f3f3f3;
+}
+
+.mutualName {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    color: #f3f3f3;
+    margin-left: 6%;
+}
+
+.mutualdesc {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+    color: #f3f3f3;
+    margin-left: 6%;
+}
+
+.MFpic {
+    margin-left: 21%;
+}
+
+.CODpic {
+    display: inline;
+    float: right;
+    padding-left: 3%;
+    padding-right: 1%;
+    width: 25%;
+}
+
+.CODratepic {
+    display: inline;
+    float: left;
+    padding-left: 1%;
+    padding-right: 2%;
+    width: 33%;
+}
+
+.CSpic {
+    display: inline;
+    float: right;
+    padding-left: 2%;
+    padding-right: 1%;
+    width: 33%;
+}
+
+.PSpic {
+    display: inline;
+    float: right;
+    padding-left: 2%;
+    padding-right: 1%;
+    width: 33%;
+}
+
+.FGBpic {
+    float: left;
+    display: inline;
+    padding-left: 1%;
+    padding-right: 2%;
+    width: 25%;
+    margin-top: 1%;
+}
+
+.FGBratespic {
+    display: inline;
+    float: right;
+    padding-right: 1%;
+    padding-left: 2%;
+    width: 25%;
+}
+
+.MBpic {
+    float: left;
+    display: inline;
+    padding-left: 1%;
+    padding-right: 2%;
+    width: 25%;
+    margin-top: 1%;
+}
+
+.MBratespic {
+    display: inline;
+    float: right;
+    padding-right: 1%;
+    padding-left: 2%;
+    width: 25%;
+}
+
+.backStick {
+    color: #ff6c6c !important;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: right;
+    font-size: 18px;
+}
+
+.backStick:hover {
+    color: #f3f3f3 !important;
+}
+
+.exInHead {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: #f3f3f3;
+}
+
+.exInDesc {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+    color: #f3f3f3;
+}
+
+.exInLabel {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    color: #f3f3f3;
+    text-align: center;
+}
+
+.indexContainer {
+    display: grid;
+    grid-template-rows: 10% 40% 10% 40%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "DOWhead SPhead" "DOWdesc SPdesc" "Rushead Wilhead" "Rusdesc Wildesc";
+    grid-gap: 20px;
+    padding-right: 2%;
+}
+
+#DOWhead {
+    grid-area: DOWhead;
+
+}
+
+#SPhead {
+    grid-area: SPhead;
+}
+
+#Rushead {
+    grid-area: Rushead;
+}
+
+#Wilhead {
+    grid-area: Wilhead;
+}
+
+#DOWdesc {
+    grid-area: DOWdesc;
+}
+
+#SPdesc {
+    grid-area: SPdesc;
+}
+
+#Rusdesc {
+    grid-area: Rusdesc;
+}
+
+#Wildesc {
+    grid-area: Wildesc;
+}
+
+.NYSEpic {
+    display: inline;
+    float: right;
+    width: 33%;
+    padding-right: 1%;
+    padding-left: 2%;
+    margin-top: 2%;
+}
+
+.NASDAQpic {
+    display: inline;
+    float: left;
+    width: 33%;
+    padding-right: 2%;
+    padding-left: 1%;
+}
+
+.date {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    color: #f3f3f3;
+    font-style: italic;
+}
+
+.FFtext {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
+    color: #f3f3f3;
+}
+
+.caption {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #f3f3f3;
+}
+
+.centerpic {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 20%;
+}
+
+.word {
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: #f3f3f3;
+    padding-left: 10%;
+}
+
+.definition {
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23px;
+    color: #f3f3f3;
+    padding-left: 16%;
+}
